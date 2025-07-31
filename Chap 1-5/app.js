@@ -294,6 +294,43 @@ var age1 = currentYear - birthYear;
 var age2 = age1 - 1;
 document.write("Your Age is " + age1 + "<br>");
 
+//______________________________QNO 12
+var radius = 20;
+var pi = 3.142;
+
+// b.  
+var circumference = 2 * pi * radius;
+document.write("Radius of a Circle is " + radius + "<br>");
+document.write("The circumference is " + circumference + "<br>");
+
+// c.  
+var area = pi * radius * radius;
+document.write("The area is " + area);
+
+// Show the results
+alert("The circumference is " + circumference);
+alert("The area is " + area);
+
+//____________________QNO 13
+document.write("<h2>THE LIFETIME SUPPLY CALCULATOR</h2>")
+// a. Favorite snack
+let favoriteSnack = "Chips";
+
+// b. Current age
+let currentAge = 18;
+
+// c. Maximum expected age
+let maxAge = 80;
+
+// d. Estimated amount per day
+let amountPerDay = 2;
+
+// e. Calculate total needed for the rest of life
+let yearsRemaining = maxAge - currentAge;
+let totalNeeded = yearsRemaining * 365 * amountPerDay;
+
+// Output the result
+document.write("You will need " + totalNeeded + " " + favoriteSnack + " to last you until the ripe old age of " + maxAge + ".");
 
 
 
