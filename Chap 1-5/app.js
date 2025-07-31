@@ -64,9 +64,9 @@
 //alert("My email address is " + email);
 
 //__________________________QNO 7
-//var book ="A smarter way to learn JavaScript"
-//alert("I am trying to learn from the book A smarter way to learn Javascript "  + book);
-
+//var bookDescription = "I am trying to learn form the Book  "
+//var book = "  A Smarter Way to Learn Javascript";
+//alert(bookDescription + book);
 //___________________________QNO 8
 //document.write("Yah! I can write HTML content through JavaScript");
 
@@ -84,22 +84,12 @@
 //___________CHAPTER 03_________________
 
 //___________________________QNO 1
-var age = 15;
-alert("I am " + age + "years old");
+//var age = 15;
+//alert("I am " + age + "years old");
 
 //____________________________QNO 2
-//var visits = localStorage.getItem("visits");
-
-//if (visits === null) {
-  //visits = 1;} else {
- // visits = Number(visits) + 1;
-//}
-
-
-//localStorage.setItem("visits", visits);
-
-
-//document.write("You have visited this site " + visits + " times.");
+//var visit = 2
+//alert("You have visited this site " + visit  +  " times " );
 
 
 //___________________________________QNO 3
@@ -120,18 +110,189 @@ alert("I am " + age + "years old");
 //____________CHAPTER 04__________________
 
 //________________________________QNO 1
-var name, age, city;
+//var name, age, city;
+//______________________________QNO 2
+//Five legal
+//myVar
+//$price
+//_count
+//userName1
+//total_amount
+//Five illegal
+//1stName
+//my-var
+//@username
+//var
+//user name
+
+//__________CHAPTER 05_____________
+//_____________________QNO 1
+//var num1 =3
+//var num2 =5
+ //alert(num1 + num2)
+//____________________QNO 2
+//SUBTRACTION
+//var num1 = 3;
+//var num2 = 5;
+//alert(num1 - num2)
+//MULTIPLICATION
+//var num1 = 3;
+//var num2 = 5;
+//alert(num1 * num2)
+//DIVISION
+//var num1 = 3;
+//var num2 = 5;
+//alert(num1 / num2)
+//MODULUS
+var num1 = 3;
+var num2 = 5;
+alert(num1 % num2)
+//___________________________QNO 3
+// a. Declare a variable
+var num;
+
+// b. Show the value of variable after declaration
+document.write("Value after variable declaration is " + num + "<br>");
+
+// c. Initialize the variable with some number
+num = 5;
+
+// d. Show the initial value
+document.write("Initial value: " + num + "<br>");
+
+// e. Increment the variable
+num++;
+
+// f. Show the value after increment
+document.write("Value after increment is: " + num + "<br>");
+
+// g. Add 7 to the variable
+num += 7;
+
+// h. Show the value after addition
+document.write("Value after addition is: " + num + "<br>");
+
+// i. Decrement the variable
+num--;
+
+// j. Show the value after decrement
+document.write("Value after decrement is: " + num + "<br>");
+
+// k. Show the remainder after dividing the variable's value by 3
+let remainder = num % 3;
+
+// l. Output the remainder
+document.write("The remainder is: " + remainder + "<br>");
+
+
+//______________________________________QNO 4
+
+var ticketPrice = 600;
+
+var totalCost = ticketPrice * 5;
+
+//alert("Cost of one movie ticket is: " + ticketPrice + " PKR\n" +
+   //   "Total cost to buy 5 tickets to a movie is: " + totalCost + " PKR");
+      //___________________________________QNO 5
+      // Table of 4
+//document.write("Table of 4<br>");
+//document.write("4 x 1 = " + (4 * 1) + "<br>");
+//document.write("4 x 2 = " + (4 * 2) + "<br>");
+//document.write("4 x 3 = " + (4 * 3) + "<br>");
+//document.write("4 x 4 = " + (4 * 4) + "<br>");
+//document.write("4 x 5 = " + (4 * 5) + "<br>");
+//document.write("4 x 6 = " + (4 * 6) + "<br>");
+//document.write("4 x 7 = " + (4 * 7) + "<br>");
+//document.write("4 x 8 = " + (4 * 8) + "<br>");
+//document.write("4 x 9 = " + (4 * 9) + "<br>");
+//document.write("4 x 10 = " + (4 * 10) + "<br>");
+
+
+//_____________________________________QNO 6
+document.write("<h2>Conversion Of Celsius And Fahrenheit</h2>")
+// a)
+var celsius = 25;
+
+// b)
+var fahrenheitFromCelsius = (celsius * 9 / 5) + 32;
+document.write(celsius + "°C is " + fahrenheitFromCelsius + "°F<br>");
+
+// c)  
+var fahrenheit = 71;
+
+// d)
+var celsiusFromFahrenheit = (fahrenheit - 32) * 5 / 9;
+document.write(fahrenheit + "°F is " + celsiusFromFahrenheit + "°C" + "<br>");
+
+
+//___________________________QNO 7
+
+// Prices
+//var price1 = 500;
+//var price2 = 300;
+
+// Quantities
+//var qty1 = 2;
+//var qty2 = 3;
+
+// Shipping charges
+//var shipping = 100;
+
+// Calculate total cost
+//var total = (price1 * qty1) + (price2 * qty2) + shipping;
+
+// Show receipt
+//document.write("<h1>SHOPPING CART</h1>")
+//document.write("Price of item 1: " + price1 + " PKR<br>");
+//document.write("Quantity of item 1: " + qty1 + "<br>");
+//document.write("Price of item 2: " + price2 + " PKR<br>");
+//document.write("Quantity of item 2: " + qty2 + "<br>");
+//document.write("Shipping Charges: " + shipping + " PKR<br><br>");
+//document.write("Total Cost: " + total + " PKR");
 
 
 
+//_____________________QNO 8
+document.write("<h2>MARK SHEET</h2>")
+var totalMarks = 500;
+var marksObtained = 420;
 
+var percentage = (marksObtained / totalMarks) * 100;
 
+// Display the result
+document.write("Total Marks: " + totalMarks + "<br>");
+document.write("Marks Obtained: " + marksObtained + "<br>");
+document.write("Percentage: " + percentage.toFixed(2) + "%");
 
+//_________________________________QNO 9
+document.write("<h2>CURRENCY IN PKR</h2>")
+// Conversion rates and amounts
+var totalInPKR = (10 * 104.80) + (25 * 28);
 
+// Display the result
+document.write("Total Currency in Pakistani Rupees: " + totalInPKR + " PKR");
+//________________________________QNO 10
+document.write("<h2>Arithmetic Operation</h2>")
+var number = 10;
+var result = ((number + 5) * 10) / 2;
+document.write("Initial number: " + number + "<br>");
+document.write("Result after calculation: " + result);
 
+//_____________________________QNO 11
+//   Question 11
+document.write("<h2>Age Calculator</h2>")
+// a.  
+var currentYear = 2016;
+document.write("Current Year: " + currentYear + "<br>")
 
+// b. 
+var birthYear = 1992;
+document.write("Birth Year: " + birthYear + "<br>")
 
-
+// c.  
+var age1 = currentYear - birthYear;
+var age2 = age1 - 1;
+document.write("Your Age is " + age1 + "<br>");
 
 
 
