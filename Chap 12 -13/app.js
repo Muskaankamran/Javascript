@@ -80,3 +80,5 @@ if (time >= 0 && time < 1200) {
 } else {
     console.log("Invalid time. Please enter a value between 0000 and 2359.");
 }
+
+
