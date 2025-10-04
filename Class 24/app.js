@@ -15,6 +15,7 @@
 //     alert("Its a busy day! ");
 // }
 
+<<<<<<< HEAD
 // var num1 = parseInt(prompt("Emter num1: "));
 // var num2 = parseInt(prompt("Emter num2: "));
 // var operator =parseInt(prompt("Emter operator: "));
@@ -44,3 +45,19 @@ switch(operator){
 }
 
 
+=======
+var num1 = prompt("Emter num1: ")
+var num2 = prompt("Emter num2: ");
+var operator = prompt("Emter operator: ");
+switch(operator){
+    case "+" :
+        alert(num1 + num2);
+        break;
+        case "-" :
+            alert(num1 - num2)
+            break;
+            default :alert("error");
+        
+}
+
+>>>>>>> d1c87961366e3489917e6dd985e9baad8cd1753f
