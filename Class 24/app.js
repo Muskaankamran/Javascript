@@ -15,17 +15,32 @@
 //     alert("Its a busy day! ");
 // }
 
-var num1 = prompt("Emter num1: ")
-var num2 = prompt("Emter num2: ");
-var operator = prompt("Emter operator: ");
+// var num1 = parseInt(prompt("Emter num1: "));
+// var num2 = parseInt(prompt("Emter num2: "));
+// var operator =parseInt(prompt("Emter operator: "));
+// switch(operator){
+//     case "+" :
+//         alert(num1 + num2);
+//         break;
+//         case "-" :
+//             alert(num1 - num2)
+//             break;
+//             default :alert("error");
+        
+// }
+var num1 = parseInt(prompt("Enter num1: "));
+var num2 = parseInt(prompt("Enter num2: "));
+var operator = prompt("Enter operator (+ or -):");
+
 switch(operator){
-    case "+" :
+    case "+":
         alert(num1 + num2);
         break;
-        case "-" :
-            alert(num1 - num2)
-            break;
-            default :alert("error");
-        
+    case "-":
+        alert(num1 - num2);
+        break;
+    default:
+        alert("Error: Invalid operator");
 }
+
 
