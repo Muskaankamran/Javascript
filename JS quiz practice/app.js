@@ -54,5 +54,115 @@
 // console.log(text);
 
 
-let randomNum = Math.floor(Math.random() * 10 + 1);
-console.log(randomNum);
+// let randomNum = Math.floor(Math.random() * 10 + 1);
+// console.log(randomNum);
+
+
+
+// var profit = 200 - '150';
+// console.log(profit);
+
+
+
+
+
+// var profit = "200" / 150;
+// console.log(profit);
+
+
+// var number = 1000000;
+// var formatted = number.toLocaleString();
+
+// console.log(formatted); // "1,000,000"
+
+
+
+
+
+// var rightNow = new Date();
+// console.log(rightNow);
+
+// var rightNow= new Date()
+// var theDay = rightNow.getDay()
+// console.log(theDay);
+
+
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+//   var now = new Date();
+//   var theDay;
+//   now.getDay();
+//   var nameOfToday = dayNames[theDay]
+//  console.log(nameOfToday);
+ 
+
+//   var d = new Date();
+//  var currentMonth = d.getMonth()
+
+//  var dayOfMonth = d.getDate()
+ 
+
+
+//   var currYr = d.getFullYear()
+ 
+//  console.log(currYr);
+
+
+
+//   var d = new Date();
+//  d.setFullYear(2001);
+// console.log(d);
+
+
+// var xYZ=new Date();
+// xYZ.setMonth(5);
+// console.log(xYZ);
+
+
+
+
+//  function tellTime() {
+//     var now = new Date();
+//    var theHr = now.getHours();
+//    var theMin = now.getMinutes();
+//  alert("Current time: "+ theHr + ":" + theMin);
+//   }
+//   tellTime()
+
+
+
+
+
+
+
+
+// function calcTot(merchTot) { 
+// var orderTot;  
+// if (merchTot >= 100) {     
+//     orderTot= merchTot; 
+// }
+//  else if (merchTot < 50.01) {
+//        orderTot = merchTot + 5;
+// }
+//  else {
+//     orderTot= merchTot + 5 + (.03 * (merchTot - 50));
+//    }
+//    return orderTot;
+//  }
+
+
+//  alert(calcTot())
+   
+// var globalValue = "I'm global!";
+
+// function sayHello() {
+//     console.log(globalValue); // Accessible here
+// }
+
+// sayHello(); // Output: I'm global!
+function greet() {
+    var localValue = "I'm local!";
+    // console.log(localValue); // Accessible here
+}
+
+greet();
+console.log(localValue); // ❌ Error: localValue is not defined
