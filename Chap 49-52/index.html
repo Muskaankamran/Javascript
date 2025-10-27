@@ -5,10 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(140, 179, 179);
+        }
+    #Form {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid gray;
+      width: 250px;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Answer 01 -->
+     <!-- Answer 01 -->
     <!-- <h2>Signup Form</h2>
 
   <form id="signupForm">
@@ -40,43 +52,24 @@
          ANSWER NO 03   -->
    
 
-
-
-  
-  <form id="Form" style="display: none;">
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" required>
-
-    <label for="grade">Grade:</label>
-    <input type="text" id="Grade" required>
-  </form>
-
-  <h2 >Student Records</h2>
-  <table id="studentTable">
+<h2>Student Records</h2>
+  <table id="studentTable" border="1" cellpadding="5">
     <thead>
       <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Grade</th>
-        <th>Action</th>
-        <th>Action</th>
-        
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td>1</td>
         <td>John</td>
         <td>A+</td>
         <td><button onclick="deleteRow(this)">Delete</button></td>
          <td><button onclick="editRow(this)">Edit</button></td>
-      </tr>
       <tr>
         <td>2</td>
         <td>Sara</td>
         <td>B</td>
         <td><button onclick="deleteRow(this)">Delete</button></td>
-         <td><button onclick="editRow(this)">Edit</button></td>
+        <td><button onclick="editRow(this)">Edit</button></td>
       </tr>
       <tr>
         <td>3</td>
@@ -85,8 +78,20 @@
         <td><button onclick="deleteRow(this)">Delete</button></td>
         <td><button onclick="editRow(this)">Edit</button></td>
       </tr>
-</div>
-    <script src="app.js"></script>
+    </tbody>
+  </table>
+
+  <form id="Form">
+    <h3>Edit Student</h3>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required><br><br>
+
+    <label for="Grade">Grade:</label>
+    <input type="text" id="Grade" required><br><br>
+
+    <button type="button" onclick="saveEdit()">Save</button>
+  </form>
+  <script src="app.js"></script>
 </body>
 
 </html>

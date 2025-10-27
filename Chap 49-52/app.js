@@ -26,12 +26,50 @@
 
     //____________ANSWER03________________
 
+    
+
+
+ let currentRow = null; 
+
     function deleteRow(button) {
-        var row = button.closest('tr');  
-        row.remove();
+      var row = button.closest('tr');  
+      row.remove();
+    }
+
+    function editRow(button) {
+      currentRow = button.closest('tr');
+      
+      
+      document.getElementById('Form').style.display = 'block';
+
+    
+      let name = currentRow.cells[1].innerText;
+      let grade = currentRow.cells[2].innerText;
+
+      
+      document.getElementById('name').value = name;
+      document.getElementById('Grade').value = grade;
+    }
+
+    function saveEdit() {
+      if (currentRow) {
+        
+        let updatedName = document.getElementById('name').value;
+        let updatedGrade = document.getElementById('Grade').value;
+
+        
+        currentRow.cells[1].innerText = updatedName;
+        currentRow.cells[2].innerText = updatedGrade;
+
+    
+        document.getElementById('Form').style.display = 'none';
       }
-      function editRow(button){
-     
-      }
-  
+    }
+
+
+
+
+
+
+
 
