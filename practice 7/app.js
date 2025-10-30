@@ -15,4 +15,7 @@
 //     container.innerHTML = " "
 
 // }
-
+ var para = document.getElementById('para')
+function zoom() {
+    para.document.getElementsByClassName += "  zoom"
+}
