@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Population Registration Form</h2>
+
+    <form id="populationForm">
+
+        
+        <label>Name:</label>
+        <input type="text" id="name" required><br><br>
+
+       
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male"> Male<br>
+        <input type="radio" name="gender" value="Female"> Female<br><br>
+
+       
+        <label>Address:</label>
+        <input type="text" id="address" required><br><br>
+
+        
+        <label>Education:</label>
+        <select id="education">
+            <option value="Matric">Matric</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Bachelors">Bachelors</option>
+            <option value="Masters">Masters</option>
+            <option value="PhD">PhD</option>
+        </select><br><br>
+
+        
+        <label>Profession:</label>
+        <select id="profession">
+            <option value="Student">Student</option>
+            <option value="Teacher">Teacher</option>
+            <option value="Engineer">Engineer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Businessman">Businessman</option>
+        </select><br><br>
+
+        <button type="button" onclick="saveRecord()">Save Record</button>
+    </form>
+
+    <hr>
+
+    <h3>Saved Records:</h3>
+    <div id="records"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
